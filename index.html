@@ -1,0 +1,78 @@
+<?
+	include $_SERVER["DOCUMENT_ROOT"]."/common/inc/header.html";
+?>
+	<div class="wrapper">
+
+		<div class="main_content">
+			<div class="slider" style="max-width:960px;margin:20px auto 0 auto;">
+				<div class="flexslider">
+				  <ul class="slides">
+					<li><img src="./common/img/bnr1.jpg" /></li>
+					<li><img src="./common/img/bnr2.jpg" /></li>
+					<li><img src="./common/img/bnr3.jpg" /></li>
+					<li><img src="./common/img/bnr4.jpg" /></li>
+				  </ul>
+				</div>
+			</div>
+
+			<div class="m_banner">
+				<ul>
+					<li>
+						<a href="./portfolio.html" class="ico2">
+							<span>PORTFOLIO</span>
+							<span>WEB / MOBILE / ACCESSIBILITY / APP</span>
+						</a>
+					</li>
+					<li>
+						<a href="./process.html" class="ico3">
+							<span>PROCESS</span>
+							<span>WORK IN PROGRESS GUclassE</span>
+						</a>
+					</li>
+					<li>
+						<a href="./study.html" class="ico1">
+							<span>WEB PUBLISHING TIP</span>
+							<span>HTML5 / CSS3 / SEMANTIC MARKUP</span>
+						</a>
+					</li>
+					<!-- <li class="s04"><p><a href="#">패키지상품(메인페이지+레이아웃+제이쿼리)</a></p></li> -->
+				</ul>
+			</div>
+
+			<div class="con_btn">
+				<a href="./about.html">ABOUT ME</a>
+				<a href="#" class="coming">BlOG</a>
+			</div>
+		</div>
+		
+		<?
+			include $_SERVER["DOCUMENT_ROOT"]."/common/inc/footer.html";
+		?>
+	</div>
+	<?
+		include $_SERVER["DOCUMENT_ROOT"]."/common/inc/topmenu.html";
+	?>
+
+	<script defer src="./common/js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+		$(function(){
+		  SyntaxHighlighter.all();
+		});
+		$(window).load(function(){
+		  $('.flexslider').flexslider({
+			animation: "slide",
+			start: function(slider){
+			  $('body').removeClass('loading');
+			}
+		  });
+		});
+	</script>
+	<!-- Syntax Highlighter -->
+	<script type="text/javascript" src="./common/js/shCore.js"></script>
+	<script type="text/javascript" src="./common/js/shBrushXml.js"></script>
+	<script type="text/javascript" src="./common/js/shBrushJScript.js"></script>
+	<!-- Optional FlexSlclasser Additions -->
+	<script src="./common/js/jquery.mousewheel.js"></script>
+	<script defer src="./common/js/demo.js"></script>
+</body>
+</html>
